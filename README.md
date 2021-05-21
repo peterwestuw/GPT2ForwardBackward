@@ -27,7 +27,7 @@ https://drive.google.com/drive/folders/10l0eF934JzkG83cOekLxnjAkO2rya45a?usp=sha
 
 
 NOTE: this requires the latest (as of January 19 2020) version
-of Huggingface transformers code, installed from source from:
+of Huggingface transformers code (v4.5), installed from source from:
 
 https://github.com/huggingface/transformers
 
