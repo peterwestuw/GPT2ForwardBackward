@@ -1,7 +1,7 @@
 # GPT2ForwardBackward
 Code for running forward and backward versions of GPT-2 XL. These were trained for the paper:
 
-West, Peter et al. “Reflective Decoding: Beyond Unidirectional Generation with Off-the-Shelf Language Models.” ACL (2021)
+**Reflective Decoding: Beyond Unidirectional Generation with Off-the-Shelf Language Models**; Peter West, Ximing Lu, Ari Holtzman, Chandra Bhagavatula, Jena Hwang, and Yejin Choi; ACL (2021)
 
 If you use our model weights for academic research, we request that you cite the original paper:
 
