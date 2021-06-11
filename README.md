@@ -39,4 +39,4 @@ model_forward = OpenGPT2LMHeadModel.from_pretrained(path_to_forward)
 model_backward = OpenGPT2LMHeadModel.from_pretrained(path_to_backward)
 encoder = Encoder()
 ```
-Then used identically to huggingface GPT-2 models (e.g. using the `.forward()` and `.generate()`)
+Then used identically to huggingface GPT-2 models (e.g. using `.forward()` and `.generate()`)
