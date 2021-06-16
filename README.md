@@ -40,3 +40,17 @@ model_backward = OpenGPT2LMHeadModel.from_pretrained(path_to_backward)
 encoder = Encoder()
 ```
 Then used identically to huggingface GPT-2 models (e.g. using `.forward()` and `.generate()`)
+
+NOTE: The backward model expects *reverse* direction data, so you must reverse sequences after tokenizing. 
+For example, to generate with the backward model you would call:
+
+```
+input_text = ' And that was the last I heard from her.'
+input_tokens = encoder.encode(input_text)[::-1]
+
+output = model_backward.generate(torch.tensor([input_tokens]).to(device_backward) )
+output_tokens = output.tolist()[0][::-1]
+print(encoder.decode(output_tokens))
+```
+
+Note that token order is reversed *before* generating to feed data into the backward model in the backwards order, then reversed again *after* generation to give a forward output sequence. 
